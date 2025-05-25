@@ -1,0 +1,243 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2b1c97, #941cf2);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #10064a;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00c98d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  padding: 80px 50px;
+  justify-content: space-between;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.payments {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.pay {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+}
+
+.get-quote {
+  background: #00c98d;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.right {
+  background: white;
+  color: black;
+  padding: 40px;
+  border-radius: 20px;
+  width: 35%;
+}
+
+.quote-form h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.quote-form p {
+  color: #555;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+}
+
+.radio-group label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+button {
+  margin-top: 20px;
+  background: #00c98d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .left, .right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 40px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.phone-icon, .telegram-icon {
+  background-color: #00c98d;
+  color: white;
+  border-radius: 50%;
+  padding: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+}
+
+
+.nav-links a {
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2b1c97;
+}
+
+
+.pay:hover {
+  background-color: #10064a;
+  color: white;
+}
+
+
+.pay {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.get-quote,
+button,
+.phone-icon,
+.telegram-icon {
+  transition: background-color 0.3s ease;
+}
+
+.get-quote:hover,
+button:hover,
+.phone-icon:hover,
+.telegram-icon:hover {
+  background-color: #13946d;
+}
+
+
+.star {
+  position: absolute;
+  color: #fae593;
+  font-size: 15px;
+  pointer-events: none;
+  animation: fly 2s ease-out forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0.5);
+    opacity: 0;
+  }
+}
