@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sparkle</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo" id="logo">Sparkle<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Наша команда</a></li>
+        <li><a href="#">Вопросы & Ответы</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <a href="tel:+79936368450" class="phone-icon">📞</a>
+      <span class="phone-text">+7(993)-636-84-50</span>
+      <a href="https://t.me/eruneto" class="telegram-icon">✉️</a>
+      <span class="telegram-text">Telegram</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="left">
+      <h1>Наше агенство<br>Для Вашего комфорта</h1>
+      <p>Sparlke — это ваше событие мечты, воплощённое в реальность. Уникальные концепции, безупречная организация и волшебная атмосфера — мы создаём впечатления, которые остаются в сердце навсегда.</p>
+      <div class="payments">
+        <button class="pay">Visa, MasterCard, МИР</button>
+        <button class="pay">QIWI</button>
+        <button class="pay">СБП</button>
+      </div>
+      <a href="tel:+79936368450" class="get-quote">Получите консультацию сейчас</a>
+    </section>
+
+    <section class="right">
+      <form class="quote-form" id="quoteForm" novalidate>
+        <h2>Консультация</h2>
+        <p>Организационное бизнес-агенство</p>
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Адрес электронной почты" id="email" required />
+        <div class="error" id="emailError"></div>
+        <input type="tel" placeholder="Номер телефона" id="phone" required />
+        <div class="error" id="phoneError"></div>
+        <p class="consult-label">Предпочитаемый метод консультации:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="consult" checked /> Голосовой звонок</label>
+          <label><input type="radio" name="consult" /> Видео-встреча</label>
+        </div>
+        <button type="submit">Подтвердить</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
